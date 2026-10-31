@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore flexible self-drive car rentals in Pune. Browse our fleet, compare rental options and enquire easily on WhatsApp.">
+  <meta name="theme-color" content="#062f35">
+  <meta property="og:title" content="CityRide — Self Drive, Your Way">
+  <meta property="og:description" content="Find the right car for your next journey in Pune.">
+  <meta property="og:type" content="website">
+  <title>CityRide — Self Drive, Your Way | Pune</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><div class="container topline-inner"><span><i class="fa-solid fa-location-dot"></i> Self-drive rentals across Pune</span><span><i class="fa-regular fa-clock"></i> Support available 24/7</span></div></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CityRide home"><span class="brand-mark"><i class="fa-solid fa-car-side"></i></span><span>city<span class="brand-accent">ride</span><small>SELF DRIVE RENTALS</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="active">Home</a><a href="#cars">Our Cars</a><a href="#packages">Packages</a><a href="#how">How it works</a><a href="#about">About us</a><a href="#contact">Contact</a>
+        <div class="mobile-nav-actions"><a class="btn btn-outline" href="tel:+910000000000"><i class="fa-solid fa-phone"></i> Call now</a><a class="btn btn-primary" href="#contact">Book a car</a></div>
+      </nav>
+      <div class="nav-actions"><a class="phone-link" href="tel:+910000000000"><i class="fa-solid fa-phone"></i><span>Call us<strong>+91 00000 00000</strong></span></a><a class="btn btn-primary btn-small" href="#contact">Book a car <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div><div class="container hero-content">
+        <div class="eyebrow light"><span></span> YOUR CITY. YOUR JOURNEY.</div>
+        <h1>Freedom looks<br>good <em>on you.</em></h1>
+        <p>Pick your car, set your plans and take the road your way. Comfortable self-drive rentals, made simple in Pune.</p>
+        <div class="hero-buttons"><a href="#cars" class="btn btn-orange">Explore our cars <i class="fa-solid fa-arrow-right"></i></a><a href="#how" class="text-link light-link">How it works <i class="fa-solid fa-play"></i></a></div>
+        <div class="hero-trust"><div><i class="fa-solid fa-calendar-check"></i><span><strong>Easy booking</strong><small>Simple enquiry process</small></span></div><div><i class="fa-solid fa-receipt"></i><span><strong>Clear pricing</strong><small>Know before you go</small></span></div><div><i class="fa-solid fa-headset"></i><span><strong>Helpful support</strong><small>We're here to help</small></span></div></div>
+      </div>
+      <div class="hero-caption">MADE FOR THE LONG WAY HOME <span>01 / 03</span></div>
+    </section>
+
+    <section class="booking-section" aria-label="Search cars">
+      <div class="container"><form class="booking-panel" id="searchForm">
+        <div class="booking-heading"><div><span class="eyebrow">PLAN YOUR DRIVE</span><h2>Where to next?</h2></div><span class="booking-note"><i class="fa-solid fa-shield-halved"></i> Enquiry first. Confirmation by our team.</span></div>
+        <div class="booking-fields">
+          <label class="field"><span><i class="fa-solid fa-location-dot"></i> Pickup location</span><select id="pickupLocation" required><option value="">Choose location</option><option>Shivajinagar</option><option>Viman Nagar</option><option>Hinjawadi</option><option>Kothrud</option><option>Pune Airport</option><option>Other Pune location</option></select></label>
+          <label class="field"><span><i class="fa-regular fa-calendar"></i> Pickup date</span><input id="pickupDate" type="date" required></label>
+          <label class="field"><span><i class="fa-regular fa-clock"></i> Pickup time</span><input id="pickupTime" type="time" value="10:00" required></label>
+          <label class="field"><span><i class="fa-regular fa-calendar-check"></i> Return date</span><input id="returnDate" type="date" required></label>
+          <label class="field"><span><i class="fa-regular fa-clock"></i> Return time</span><input id="returnTime" type="time" value="10:00" required></label>
+          <label class="field"><span><i class="fa-solid fa-repeat"></i> Rental plan</span><select id="rentalPlan"><option>Daily</option><option>Weekly</option><option>Monthly</option></select></label>
+          <button class="btn btn-dark search-btn" type="submit">Search cars <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-feedback" id="searchFeedback" role="status"></p>
+      </form></div>
+    </section>
+
+    <section class="section fleet-section" id="cars">
+      <div class="container">
+        <div class="section-top"><div><div class="eyebrow"><span></span> THE CITYRIDE COLLECTION</div><h2>Find your <em>kind</em> of drive.</h2><p class="section-intro">From quick city runs to open-road escapes, there's a car for every kind of plan.</p></div><a href="#contact" class="text-link">Need a recommendation? <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="fleet-toolbar"><div class="filter-list" id="filterList"><button class="filter-chip selected" data-filter="All">All cars</button><button class="filter-chip" data-filter="Hatchback">Hatchback</button><button class="filter-chip" data-filter="Sedan">Sedan</button><button class="filter-chip" data-filter="SUV">SUV</button><button class="filter-chip" data-filter="Premium">Premium</button><button class="filter-chip" data-filter="Automatic">Automatic</button></div><label class="sort-control">Sort by <select id="sortSelect"><option value="popular">Popularity</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
+        <div class="search-summary" id="searchSummary" hidden></div>
+        <div class="car-grid" id="carGrid"></div>
+        <div class="fleet-bottom"><span>Prices shown are illustrative sample rates and can be configured.</span><a href="#contact" class="text-link">Ask about a car <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <section class="packages-section section" id="packages"><div class="container">
+      <div class="center-heading"><div class="eyebrow"><span></span> RENT ON YOUR TERMS <span></span></div><h2>A plan that fits<br><em>your timeline.</em></h2><p>One day or a few weeks away — choose a rental duration that works for you.</p></div>
+      <div class="package-grid">
+        <article class="package-card"><div class="package-icon"><i class="fa-regular fa-sun"></i></div><span class="package-label">FLEXIBLE START</span><h3>Daily drive</h3><p>Perfect for errands, meetings and spontaneous city plans.</p><div class="package-price">From <strong>₹1,499</strong><small> / day*</small></div><a href="#contact" class="btn btn-outline-dark package-link" data-package="Daily Rental">Enquire for a day <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="package-card featured"><div class="popular-tag">GREAT FOR GETAWAYS</div><div class="package-icon"><i class="fa-solid fa-route"></i></div><span class="package-label">MORE ROAD, MORE VALUE</span><h3>Weekly escape</h3><p>For holidays, family visits and longer business trips.</p><div class="package-price">From <strong>₹8,999</strong><small> / week*</small></div><a href="#contact" class="btn btn-orange package-link" data-package="Weekly Rental">Explore weekly <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="package-card"><div class="package-icon"><i class="fa-regular fa-calendar-days"></i></div><span class="package-label">STAY A LITTLE LONGER</span><h3>Monthly ride</h3><p>A convenient option when you need a car for the long run.</p><div class="package-price">From <strong>₹29,999</strong><small> / month*</small></div><a href="#contact" class="btn btn-outline-dark package-link" data-package="Monthly Rental">Ask for monthly rates <i class="fa-solid fa-arrow-right"></i></a></article>
+      </div><p class="pricing-footnote">*Illustrative starting prices only. Final rates depend on car, dates, duration and applicable terms.</p>
+    </div></section>
+
+    <section class="how-section section" id="how"><div class="container"><div class="section-top"><div><div class="eyebrow light"><span></span> FOUR SIMPLE STEPS</div><h2>From search to <em>start.</em></h2><p class="section-intro">A straightforward way to get behind the wheel.</p></div><div class="step-count">01 — 04</div></div>
+      <div class="steps-grid"><article class="step"><span class="step-no">01</span><div class="step-icon"><i class="fa-solid fa-map-location-dot"></i></div><h3>Choose your place</h3><p>Share your pickup location and preferred dates.</p></article><article class="step"><span class="step-no">02</span><div class="step-icon"><i class="fa-solid fa-car"></i></div><h3>Pick your car</h3><p>Compare options and choose the ride that suits you.</p></article><article class="step"><span class="step-no">03</span><div class="step-icon"><i class="fa-regular fa-clipboard"></i></div><h3>Send an enquiry</h3><p>Submit your details so the team can check availability.</p></article><article class="step"><span class="step-no">04</span><div class="step-icon"><i class="fa-solid fa-key"></i></div><h3>Pick up & go</h3><p>Complete verification, collect the car and enjoy the drive.</p></article></div>
+    </div></section>
+
+    <section class="about-section section" id="about"><div class="container about-grid"><div class="about-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=85" alt="Premium car on an open road" loading="lazy"><div class="image-stamp"><strong>YOUR</strong><span>DRIVE</span><strong>YOUR WAY</strong></div></div><div class="about-copy"><div class="eyebrow"><span></span> THE CITYRIDE DIFFERENCE</div><h2>Good journeys<br>start with <em>good choices.</em></h2><p class="section-intro">We believe getting around should feel simple. Explore a thoughtfully presented fleet, understand the rental terms and speak to our team before you set off.</p><div class="benefit-grid"><div><i class="fa-solid fa-circle-check"></i><span><strong>Clear rental terms</strong><small>Understand the details upfront.</small></span></div><div><i class="fa-solid fa-screwdriver-wrench"></i><span><strong>Vehicle care</strong><small>Ask about maintenance and cleaning.</small></span></div><div><i class="fa-solid fa-wallet"></i><span><strong>Flexible options</strong><small>Daily, weekly and monthly plans.</small></span></div><div><i class="fa-solid fa-headset"></i><span><strong>Human support</strong><small>Get help from the rental team.</small></span></div></div><a href="#contact" class="btn btn-dark">Talk to our team <i class="fa-solid fa-arrow-right"></i></a></div></div></section>
+
+    <section class="requirements-section section"><div class="container requirements-grid"><div><div class="eyebrow"><span></span> BEFORE YOU HIT THE ROAD</div><h2>Ready to rent?<br><em>Here's what you'll need.</em></h2><p class="section-intro">Keep these common requirements handy. Final eligibility and documents depend on the rental company's actual policies.</p><a href="#contact" class="text-link">Ask about rental requirements <i class="fa-solid fa-arrow-right"></i></a></div><div class="requirement-list"><div><span>01</span><i class="fa-solid fa-id-card"></i><p><strong>Valid driving licence</strong><small>Accepted licence as required by the rental provider.</small></p></div><div><span>02</span><i class="fa-solid fa-address-card"></i><p><strong>Government photo ID</strong><small>A valid identity document for verification.</small></p></div><div><span>03</span><i class="fa-solid fa-user-check"></i><p><strong>Age eligibility</strong><small>Minimum driver age is set by the provider.</small></p></div><div><span>04</span><i class="fa-solid fa-lock"></i><p><strong>Security deposit</strong><small>Amount and refund terms must be confirmed.</small></p></div></div></div></section>
+
+    <section class="testimonial-section section"><div class="container testimonial-wrap"><div class="testimonial-heading"><div class="eyebrow light"><span></span> WORDS FROM THE ROAD</div><h2>Every trip has<br>a <em>story.</em></h2><p>Example testimonial layout. Replace these sample reviews with verified customer feedback before publishing.</p><div class="slider-controls"><button id="prevReview" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button><button id="nextReview" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button></div></div><div class="testimonial-card" id="testimonialCard" aria-live="polite"></div></div></section>
+
+    <section class="faq-section section"><div class="container faq-grid"><div><div class="eyebrow"><span></span> GOOD TO KNOW</div><h2>Questions?<br><em>We've got you.</em></h2><p class="section-intro">A few things you may want to know before booking. Confirm all final terms with the rental team.</p><a class="btn btn-outline-dark" href="#contact">Ask us directly <i class="fa-solid fa-arrow-right"></i></a></div><div class="faq-list" id="faqList">
+      <article class="faq-item open"><button class="faq-question" aria-expanded="true">What documents are required to rent a car?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Typically, a valid driving licence and government-approved photo ID are requested. Exact requirements depend on the rental provider.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">Is fuel included in the rental price?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Fuel policy can vary by vehicle and provider. Please confirm whether the car is supplied with a particular fuel level and how it must be returned.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">Can I extend my booking?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Extensions may be possible subject to vehicle availability and approval. Contact the team before your scheduled return time.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">What happens if I return the car late?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Late-return charges and grace periods depend on the provider's rental policy. Confirm these details before your trip.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">Is there a security deposit?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>A refundable security deposit may apply. The amount, payment method and refund timeline must be confirmed with the rental company.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">Can I travel outside Pune?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Outstation travel is subject to vehicle permissions, route restrictions and the provider's terms. Ask for approval before travelling.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">What if the vehicle is damaged?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Follow the provider's incident procedure and contact them immediately. Damage liability and insurance coverage are governed by the signed rental agreement.</p></div></article>
+      <article class="faq-item"><button class="faq-question" aria-expanded="false">How can I cancel my booking?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Contact the rental team to request cancellation. Applicable deadlines, fees and refunds depend on the provider's cancellation policy.</p></div></article>
+    </div></div></section>
+
+    <section class="contact-section section" id="contact"><div class="container contact-grid"><div class="contact-copy"><div class="eyebrow light"><span></span> LET'S GET YOU MOVING</div><h2>Your next drive<br>starts <em>right here.</em></h2><p>Tell us what you need. We'll get back to you to discuss vehicle options and availability.</p><div class="contact-method"><i class="fa-brands fa-whatsapp"></i><span><small>WHATSAPP ENQUIRIES</small><strong>Chat with our team</strong></span><a href="#" id="contactWhatsapp" aria-label="WhatsApp us"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-method"><i class="fa-solid fa-phone"></i><span><small>CALL US</small><strong>+91 00000 00000</strong></span><a href="tel:+910000000000" aria-label="Call us"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-location"><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra, India</div></div>
+      <form class="enquiry-form" id="enquiryForm"><div class="form-head"><span>BOOKING ENQUIRY</span><h3>Let's plan your ride.</h3><p>Fields marked * are required.</p></div><div class="form-grid"><label>Full name *<input id="customerName" type="text" placeholder="Your name" required minlength="2"></label><label>Phone number *<input id="customerPhone" type="tel" placeholder="+91 98765 43210" required pattern="[0-9+ ()-]{10,16}"></label><label>Email address<input id="customerEmail" type="email" placeholder="you@example.com"></label><label>Choose a car<select id="selectedCar"><option value="">Any available car</option></select></label><label>Pickup date *<input id="formPickup" type="date" required></label><label>Return date *<input id="formReturn" type="date" required></label><label class="full-field">Pickup location *<input id="formLocation" type="text" placeholder="e.g. Pune Airport" required></label><label class="full-field">Anything else? <textarea id="customerMessage" rows="3" placeholder="Share your plans or questions..."></textarea></label></div><button type="submit" class="btn btn-orange form-submit">Send enquiry on WhatsApp <i class="fa-brands fa-whatsapp"></i></button><p class="privacy-note"><i class="fa-solid fa-lock"></i> Your details will be used to respond to this enquiry.</p><p class="form-feedback" id="enquiryFeedback" role="status"></p><p class="disclaimer">Submitting opens WhatsApp with your enquiry. This does not reserve a vehicle. Booking is confirmed only by the rental company.</p></form>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark"><i class="fa-solid fa-car-side"></i></span><span>city<span class="brand-accent">ride</span><small>SELF DRIVE RENTALS</small></span></a><p>Your city, your pace, your journey. Explore Pune with a little more freedom.</p><div class="social-links"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></div></div><div><h4>Explore</h4><a href="#cars">Our cars</a><a href="#packages">Rental packages</a><a href="#how">How it works</a><a href="#about">About us</a></div><div><h4>Car categories</h4><a href="#cars">Hatchbacks</a><a href="#cars">Sedans</a><a href="#cars">SUVs</a><a href="#cars">Premium cars</a></div><div><h4>Get in touch</h4><a href="tel:+910000000000">+91 00000 00000</a><a href="mailto:hello@example.com">hello@example.com</a><span>Pune, Maharashtra, India</span><a href="#contact">Send an enquiry</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> CityRide. All rights reserved.</span><div><a href="#contact">Privacy policy</a><a href="#contact">Terms & conditions</a></div><span>Designed for the open road.</span></div></div></footer>
+  <a href="#" class="floating-whatsapp" id="floatingWhatsapp" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="modal-backdrop" id="carModal" aria-hidden="true"><div class="car-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button><div id="modalContent"></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
